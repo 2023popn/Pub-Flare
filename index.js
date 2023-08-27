@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+const port = process.env.PORT;
+
 const {readFile} = require('fs').promises;
 
 app.get("/", async (request, response) => {
@@ -9,4 +11,4 @@ app.get("/", async (request, response) => {
 
 })
 
-app.listen(process.env.PORT || 3000, () => console.log("App available on http://localhost:3000"))
+app.listen(port || 3000, () => console.log("App available on http://localhost:3000"))
