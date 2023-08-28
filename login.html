@@ -18,8 +18,10 @@
         <![endif]-->
         <section>
             <form>
-                <h1>FLARE</h1>
-                <h2>A status sharing service</h2>
+                <div id="title-container">
+                    <h1>FLARE</h1>
+                    <h2>A status sharing service</h2>
+                </div>
 
                 <input type="text" placeholder="Username" name="username">
                 <input type="password" placeholder="Password" name="password">
@@ -53,7 +55,15 @@
             box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             padding: 50px;
+        }
+
+        #title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
         }
 
         input{
