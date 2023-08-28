@@ -1,0 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 5 5;
+}
