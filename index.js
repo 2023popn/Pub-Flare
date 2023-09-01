@@ -9,7 +9,14 @@ const {readFile} = require('fs').promises;
 
 app.get("/", async (request, response) => {
 
-    response.send(await readFile('./login.html', 'utf-8'))
+    url_ending = request.url
+
+    if(url_ending == "/"){
+        response.send(await readFile('./login.html', 'utf-8'));
+    } else {
+        response.send(await readFile('./home.html', 'utf-8'));
+    }
+    
 
 })
 
